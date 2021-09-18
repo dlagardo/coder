@@ -1,8 +1,8 @@
 var personaDatos = {
-    nombre:"Juan",
-    edad:30,
-    peso:"50 kg",
-    nacionalidad:"nacionalidad",
+    nombre:prompt("ingrese su nombre : "),
+    edad:parseInt(prompt("Ingrese Edad")),
+    peso:prompt("ingrese su Peso: "),
+    nacionalidad:prompt("ingrese su Nacionalidad : "),
    };
 
    class moldeadorPersona {
@@ -15,6 +15,7 @@ var personaDatos = {
    }
 }
 
-   
-   var personaV3= new moldeadorPersona("DARIO",29,"100 kg","Arg");
+  
+    var personaV3= new moldeadorPersona(personaDatos.nombre,personaDatos.edad,personaDatos.peso,personaDatos.nacionalidad);
     alert(personaV3.nombre);
+    alert(personaV3.edad);
