@@ -19,3 +19,5 @@ var personaDatos = {
     var personaV3= new moldeadorPersona(personaDatos.nombre,personaDatos.edad,personaDatos.peso,personaDatos.nacionalidad);
     alert(personaV3.nombre);
     alert(personaV3.edad);
+    alert(personaV3.peso);
+
