@@ -42,9 +42,8 @@ let numeros = [];
 for (i = 0; i < baseDatos.length; i++) {
     numeros.push(baseDatos[i].precio);
     aux=aux+baseDatos[i].precio;
-
-
 }
+
 aux=descuento(aux);
 
 function descuento(aux){
@@ -53,7 +52,8 @@ aux=aux-100;
 }
 return aux;
 }
-console.log(numeros);
+
+
 console.log("Precio total de ceompre es : "+aux);
 
 
