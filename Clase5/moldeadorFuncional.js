@@ -1,4 +1,4 @@
-var personaDatos = {
+let personaDatos = {
     nombre:"Juan",
     edad:30,
     peso:"50 kg",
@@ -13,5 +13,5 @@ var personaDatos = {
 
    };
 
-   var personaV2= new moldeadorFuncional("juan",30,"50 kg","Arg");
+   let personaV2= new moldeadorFuncional("juan",30,"50 kg","Arg");
    alert(personaV2.edad);

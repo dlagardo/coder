@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilopagina.css">
+    <link rel="stylesheet" href="css/normalize.css">
+	<script src="https://kit.fontawesome.com/b474b753cc.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Tienda</title>
+</head>
+
+<body>
+    
+    <header id="cabecera">
+      
+        <nav id="navegacion">
+            <span class="nav-button">Ver Menu</span>
+            <ul class="menu" >
+                <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#"><i class="far fa-heart"></i> Acerca</a></li>
+                <li><a href="#"><i class="fas fa-suitcase"></i> Portafolio</a></li>
+                <li><a href="#"><i class="far fa-lightbulb"></i> Servicios</a></li>
+                <li><a href="#"><i class="far fa-envelope"></i> Contactos</a></li>
+            </ul>	
+        </nav>
+       
+    </header><!-- termina id cabecera-->
+    <!-- START SECTION STORE -->
+    <section class="store">
+        <div class="container">
+            <div class="items">
+                <div class="row">
+
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Pelota de Boca</h3>
+                            <img class="item-image" src="./img/pelota-boca.jpg">
+
+                            <div class="item-details">
+                                <h4 class="item-price">9.99€</h4>
+                                <button class="item-button btn btn-primary addToCart">>AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Pelota de River</h3>
+
+                            <img class="item-image" src="./img/pelota-river.jpg">
+
+                            <div class="item-details">
+                                <h4 class="item-price">9.99€</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Pelota San Lorenzo</h3>
+
+                            <img class="item-image" src="./img/pelota-san lorenzo.jpg">
+
+                            <div class="item-details">
+                                <h4 class="item-price">9.99€</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Pelota Independiente</h3>
+
+                            <img class="item-image" src="./img/pelota-indep.jpg">
+
+                            <div class="item-details">
+                                <h4 class="item-price">19.99€</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION STORE -->
+    <!-- START SECTION SHOPPING CART -->
+    <section class="shopping-cart">
+        <div class="container">
+            <h1 class="text-center">CARRITO</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header" id="boca">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header" id="precio-boca">
+                        <h6 class="text-truncate">Precio</h6>
+                      
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header" id="cant-boca">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- ? START SHOPPING CART ITEMS -->
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+               
+            </div>
+            <!-- ? END SHOPPING CART ITEMS -->
+
+            <!-- START TOTAL -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0">Total</p>
+                        <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
+                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-delay="2000">
+                            <div class="toast-header">
+                                <span>✅</span>
+                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Se aumentó correctamente la cantidad
+                            </div>
+                        </div>
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- END TOTAL -->
+
+            <!-- START MODAL COMPRA -->
+            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Pronto recibirá su pedido</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MODAL COMPRA -->
+
+
+        </div>
+
+    </section>
+    <!-- END SECTION SHOPPING CART -->
+
+
+    <!-- START FOOTER -->
+    	
+		<footer id="pie-pagina">
+			<p>&copy; 2015 <a class="fab fa-facebook" href="http://facebook.com/dario.lagardo"> Dario </a></p>
+		</footer><!-- termina pie-pagina-->
+
+    <!-- END FOOTER -->
+
+
+
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+        <script src="./Producto.js"></script>
+   <!-- <script >
+        
+        let preciof=0;
+   function capturar(){
+    <script src="./Persona.js"></script>
+       function Precio(precio){
+            this.precio=precio;
+       }
+      nuevaVenta=new Precio(50);
+    //    console.log(nuevaVenta)
+    preciof=nuevaVenta.precio+preciof;
+        agregar();
+   }
+   var baseDatos=[];
+   function agregar(){
+  
+     baseDatos.push(nuevaVenta);
+     console.log(baseDatos);
+    
+     document.getElementById("precio-boca").innerHTML+= '<h7>'+" "+'</h7>';
+     document.getElementById("precio-boca").innerHTML+= '<h7>'+preciof+'</h7>';
+     document.getElementById("boca").innerHTML+= '<h7>Pelota de Boca</h7>';
+     document.getElementById("cant-boca").innerHTML+= '<h7>'+baseDatos.length+'</h7>';
+   };
+    </script>
+         -->
+
+</body>
+
+</html>

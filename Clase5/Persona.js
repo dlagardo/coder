@@ -4,4 +4,6 @@ var personaDatos = {
  peso:"50 kg",
  nacionalidad:"nacionalidad",
 };
+
 alert(personaDatos.nombre);
+

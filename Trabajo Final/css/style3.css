@@ -1,0 +1,48 @@
+body{
+	background: #f4f4f4;
+
+}
+.container{
+	width:70%;
+	margin: 2em auto;
+	background: white;
+	padding: 1em;
+}
+
+.float-left,
+.float-right{
+	background: #6daf60;
+	color:white;
+	padding:1em;
+	margin: 1em;
+}
+
+
+.float-left{
+	
+	float: left;
+	margin: 0 1em 1em 0;
+}
+.float-right{
+
+	float: right;
+	margin: 0 0 1em 1em;
+}
+.relative,
+.absolute,
+.fixed{
+background: tomato;
+color: white;
+padding:1em;
+}
+.relative{
+	position: relative;
+	left: 2em;
+}
+.absolute{
+	position: absolute;
+}
+.fixed{
+	position: fixed;
+}
+

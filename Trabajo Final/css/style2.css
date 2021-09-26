@@ -1,0 +1,17 @@
+
+html{
+	font-size: 1em;
+}
+
+
+.caja{
+	width: 40%;
+
+	font-size:1em;
+    line-height: 1.4em;
+	background: yellow;
+
+}
+.grande{
+	font-size: 1.3rem;
+}

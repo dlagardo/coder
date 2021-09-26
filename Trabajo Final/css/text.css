@@ -1,0 +1,49 @@
+.div1{
+	background: yellow;
+	padding: 10px;
+}
+.cabecera{
+	background: red;
+	padding: 5px;
+	text-align: center;
+}
+#contenido{
+	background: yellow;
+	padding: 5px;
+}
+.articulo{
+	background: white;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+body{
+	background-color:#c4c4c4;
+	background-image:url(../img/footer1.jpg);
+
+	background-repeat: repeat;
+	background-position: center center;
+	background-attachment: scroll;
+	color:black;
+
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-align: center;
+
+	font-family:Arial,Helvetica,sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+	font-style: normal;
+	
+	margin: 0;
+}
+div{
+width: 560px;
+/*height: 300px;*/
+background: yellow;
+margin:20px auto 20px auto;
+padding: 20px;
+border-width: 5px;
+border-color:red;
+border-style:double;
+}
