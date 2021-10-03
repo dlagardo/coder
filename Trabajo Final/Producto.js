@@ -18,7 +18,7 @@ function agregar(){
  i++;
 
 
-  document.getElementById("cant-boca").innerHTML+= '<h7>'+baseDatos.length+'</h7>';
+  
 };
 let c=0;
 let d =1;
