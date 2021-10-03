@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="./Producto.js" defer></script>
+        <script src="./persona.js" defer></script>
     <title>Tienda</title>
+   
 </head>
 
 <body>
@@ -33,6 +36,7 @@
     </header><!-- termina id cabecera-->
     <!-- START SECTION STORE -->
     <section class="store">
+        <div id="bienvenido"  ></div>
         <div class="container">
             <div class="items">
                 <div class="row">
@@ -42,9 +46,9 @@
                             <h3 class="item-title">Pelota de Boca</h3>
                             <img class="item-image" src="./img/pelota-boca.jpg">
 
-                            <div class="item-details">
-                                <h4 class="item-price">9.99€</h4>
-                                <button class="item-button btn btn-primary addToCart">>AÑADIR AL CARRITO</button>
+                            <div class="item-details" >
+                                <h4 class="item-price" id="1">9.99€</h4>
+                                <button id="btn1" class="item-button btn btn-primary addToCart">>AÑADIR AL CARRITO</button>
                             </div>
                         </div>
                     </div>
@@ -55,8 +59,8 @@
                             <img class="item-image" src="./img/pelota-river.jpg">
 
                             <div class="item-details">
-                                <h4 class="item-price">9.99€</h4>
-                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                                <h4 id="2" class="item-price">9.99€</h4>
+                                <button id="btn2" class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                             </div>
                         </div>
                     </div>
@@ -70,8 +74,8 @@
                             <img class="item-image" src="./img/pelota-san lorenzo.jpg">
 
                             <div class="item-details">
-                                <h4 class="item-price">9.99€</h4>
-                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                                <h4 id="3" class="item-price">9.99€</h4>
+                                <button id="btn3" class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                             </div>
                         </div>
                     </div>
@@ -82,8 +86,8 @@
                             <img class="item-image" src="./img/pelota-indep.jpg">
 
                             <div class="item-details">
-                                <h4 class="item-price">19.99€</h4>
-                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                                <h4 id="4" class="item-price">19.99€</h4>
+                                <button id="btn4" class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                             </div>
                         </div>
                     </div>
@@ -117,11 +121,62 @@
                         <h6>Cantidad</h6>
                     </div>
                 </div>
+                <div class="col-6">
+                    <div class="shopping-cart-header" id="river">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header" id="precio-river">
+                        <h6 class="text-truncate">Precio</h6>
+                      
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header" id="cant-river">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="shopping-cart-header" id="sanlorenzo">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header" id="precio-sanlorenzo">
+                        <h6 class="text-truncate">Precio</h6>
+                      
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header" id="cant-sanlorenzo">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="shopping-cart-header" id="indep">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header" id="precio-indep">
+                        <h6 class="text-truncate">Precio</h6>
+                      
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header" id="cant-indep">
+                        <h6>Cantidad</h6>
+                    </div>
+                    
+                </div>
             </div>
             <!-- ? START SHOPPING CART ITEMS -->
             <div class="shopping-cart-items shoppingCartItemsContainer">
                
             </div>
+           
+              
             <!-- ? END SHOPPING CART ITEMS -->
 
             <!-- START TOTAL -->
@@ -201,7 +256,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-        <script src="./Producto.js"></script>
+        
    <!-- <script >
         
         let preciof=0;
@@ -215,6 +270,7 @@
     preciof=nuevaVenta.precio+preciof;
         agregar();
    }
+   
    var baseDatos=[];
    function agregar(){
   

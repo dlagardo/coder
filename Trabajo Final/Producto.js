@@ -1,90 +1,83 @@
 
-let personaVenta = {
-    // nombre:prompt("ingrese su nombre : "),
-    // edad:parseInt(prompt("Ingrese Edad")),
-    // peso:prompt("ingrese su Peso: "),
-    // nacionalidad:prompt("ingrese su Nacionalidad : "),
-    precio: 8,
+let b=0;
+let i =1;
+let array=[];
 
+function agregar(){
+    var a = document.getElementById('1').innerHTML;
+    var a=parseFloat(a);
+
+    b=b+a;
+   
+
+  document.getElementById("precio-boca").innerHTML+= '<h7>'+" "+'</h7>';
+  document.getElementById("precio-boca").innerHTML= '<h7>'+'$'+b+'</h7>';
+  document.getElementById("boca").innerHTML= '<h7>Pelota de Boca</h7>';
+  document.getElementById("cant-boca").innerHTML= '<h7>'+i+'</h7>';
+
+ i++;
+
+
+  document.getElementById("cant-boca").innerHTML+= '<h7>'+baseDatos.length+'</h7>';
 };
-
-
-var baseDatos = [];
-
-function nuevaVenta(pprecio) {
-    this.precio = pprecio;
-};
-
-let opcion = 0;
-opcion = parseInt(prompt("Ingrese 0 si desea cargar precio : "));
-while (opcion === 0) {
-    let n = parseInt(prompt("ingrese precio :"));
-    prod = new nuevaVenta(n);
-    baseDatos.push(prod);
-    opcion = parseInt(prompt("Ingrese 0 si desea cargar precio : "));
-
-}
-
-
-console.log(baseDatos)
-console.log(prod)
-let i = 0;
-
-
-let x = 0;
-let c = 0;
-let aux = 0;
-let men = baseDatos[0].precio;
-let numeros = [];
-// for (i = 0; i < baseDatos.length; i++) {
-//     numeros.push(baseDatos[i].precio);
-// }
-for (i = 0; i < baseDatos.length; i++) {
-    numeros.push(baseDatos[i].precio);
-    aux=aux+baseDatos[i].precio;
-}
-
-aux=descuento(aux);
-
-function descuento(aux){
-if(aux>1000){
-aux=aux-100;
-}
-return aux;
-}
-
-
-console.log("Precio total de ceompre es : "+aux);
-
-
-
-
-console.log();
-
-numeros.sort((a, b) => b - a);
-console.log(numeros);
-
-console.log();
-
-numeros.sort((a, b) => a - b);
-console.log(numeros);
-
-
-
-
-
-
-
-
-
-// var baseDatos=[];
-// function agregar(){
-
+let c=0;
+let d =1;
+function agregar2(){
+    var a = document.getElementById('2').innerHTML;
+    var a=parseFloat(a);
+   
+   c=c+a; 
 //   baseDatos.push(nuevaVenta);
 //   console.log(baseDatos);
 
-// //   document.getElementById("precio-boca").innerHTML+= '<h7>'+" "+'</h7>';
-// //   document.getElementById("precio-boca").innerHTML+= '<h7>'+preciof+'</h7>';
-// //   document.getElementById("boca").innerHTML+= '<h7>Pelota de Boca</h7>';
-// //   document.getElementById("cant-boca").innerHTML+= '<h7>'+baseDatos.length+'</h7>';
-// };
+  document.getElementById("precio-river").innerHTML+= '<h7>'+" "+'</h7>';
+  document.getElementById("precio-river").innerHTML= '<h7>'+'$'+c+'</h7>';
+  document.getElementById("river").innerHTML= '<h7>Pelota de river</h7>';
+  document.getElementById("cant-river").innerHTML= '<h7>'+d+'</h7>';
+
+ d++;
+ 
+}
+
+let x=0;
+let e =1;
+function agregar3(){
+    var a = document.getElementById('3').innerHTML;
+    var a=parseFloat(a);
+   
+   x=x+a;
+//   baseDatos.push(nuevaVenta);
+//   console.log(baseDatos);
+
+  document.getElementById("precio-sanlorenzo").innerHTML+= '<h7>'+" "+'</h7>';
+  document.getElementById("precio-sanlorenzo").innerHTML= '<h7>'+'$'+x+'</h7>';
+  document.getElementById("sanlorenzo").innerHTML= '<h7>Pelota de San Lorenzo</h7>';
+  document.getElementById("cant-sanlorenzo").innerHTML= '<h7>'+e+'</h7>';
+
+
+ e++;
+
+//   document.getElementById("cant-boca").innerHTML+= '<h7>'+baseDatos.length+'</h7>';
+};
+let z=0;
+let f =1;
+function agregar4(){
+    var a = document.getElementById('4').innerHTML;
+    var a=parseFloat(a);
+   
+   z=z+a;
+//   baseDatos.push(nuevaVenta);
+//   console.log(baseDatos);
+
+  document.getElementById("precio-indep").innerHTML+= '<h7>'+" "+'</h7>';
+  document.getElementById("precio-indep").innerHTML= '<h7>'+'$'+z+'</h7>';
+  document.getElementById("indep").innerHTML= '<h7>Pelota de Independiente</h7>';
+  document.getElementById("cant-indep").innerHTML= '<h7>'+f+'</h7>';
+
+ f++;
+//   document.getElementById("cant-boca").innerHTML+= '<h7>'+baseDatos.length+'</h7>';
+};
+btn1.addEventListener('click',agregar);
+btn2.addEventListener('click',agregar2);
+btn3.addEventListener('click',agregar3);
+btn4.addEventListener('click',agregar4);
