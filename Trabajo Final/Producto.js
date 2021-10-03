@@ -8,7 +8,7 @@ function agregar(){
     var a=parseFloat(a);
 
     b=b+a;
-    sumatotal=sumatotal+b;
+    sumatotal=sumatotal+a;
 
   document.getElementById("precio-boca").innerHTML+= '<h7>'+" "+'</h7>';
   document.getElementById("precio-boca").innerHTML= '<h7>'+'$'+b+'</h7>';
@@ -28,7 +28,7 @@ function agregar2(){
     var a=parseFloat(a);
    
    c=c+a; 
-   sumatotal=sumatotal+c;
+   sumatotal=sumatotal+a;
   
 //   baseDatos.push(nuevaVenta);
 //   console.log(baseDatos);
@@ -50,7 +50,7 @@ function agregar3(){
     var a=parseFloat(a);
    
    x=x+a;
-   sumatotal=sumatotal+x;
+   sumatotal=sumatotal+a;
 //   baseDatos.push(nuevaVenta);
 //   console.log(baseDatos);
 
@@ -72,7 +72,7 @@ function agregar4(){
     var a=parseFloat(a);
    
    z=z+a;
-   sumatotal=sumatotal+z;
+   sumatotal=sumatotal+a;
 //   baseDatos.push(nuevaVenta);
 //   console.log(baseDatos);
 
