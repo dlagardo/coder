@@ -16,7 +16,7 @@ function agregar() {
   document.getElementById("cant-boca").innerHTML = '<h7>' + i + '</h7>';
   document.getElementById("total").innerHTML = '<h7>' + parseInt(sumatotal) + '</h7>';
 
-  i++;
+  i++;//variable para sumar cantidad de productos agregados al carro
 };
 let c = 0;
 let d = 1;
@@ -33,7 +33,7 @@ function agregar2() {
   document.getElementById("cant-river").innerHTML = '<h7>' + d + '</h7>';
   document.getElementById("total").innerHTML = '<h7>' + parseInt(sumatotal) + '</h7>';
 
-  d++;
+  d++;//variable para sumar cantidad de productos agregados al carro
 
 }
 
@@ -52,7 +52,7 @@ function agregar3() {
   document.getElementById("cant-sanlorenzo").innerHTML = '<h7>' + e + '</h7>';
   document.getElementById("total").innerHTML = '<h7>' + parseInt(sumatotal) + '</h7>';
 
-  e++;
+  e++;//variable para sumar cantidad de productos agregados al carro
 };
 let z = 0;
 let f = 1;
@@ -68,7 +68,7 @@ function agregar4() {
   document.getElementById("indep").innerHTML = '<h7>Pelota de Independiente</h7>';
   document.getElementById("cant-indep").innerHTML = '<h7>' + f + '</h7>';
   document.getElementById("total").innerHTML = '<h7>' + parseInt(sumatotal) + '</h7>';
-  f++;
+  f++;//variable para sumar cantidad de productos agregados al carro
 
 };
 btn1.addEventListener('click', agregar);
