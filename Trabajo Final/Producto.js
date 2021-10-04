@@ -42,7 +42,7 @@ function agregar3() {
   let a = document.getElementById('3').innerHTML;
   a = parseFloat(a);
 
-  suma_Prod3 = suma_Prod2 + a;//suma las veces que se selecciona el producto
+  suma_Prod3 = suma_Prod3 + a;//suma las veces que se selecciona el producto
   sumatotal = sumatotal + a;//variable Global para sumar los distintos
  
   document.getElementById("precio-sanlorenzo").innerHTML += '<h7>' + " " + '</h7>';
