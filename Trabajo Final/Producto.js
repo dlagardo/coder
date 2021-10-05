@@ -56,6 +56,7 @@ function agregar3() {
 let suma_Prod4 = 0;
 let cant_prod4= 1;
 
+
 function agregar4() {
   let a = document.getElementById('4').innerHTML;
   a = parseFloat(a);
@@ -71,8 +72,38 @@ function agregar4() {
   cant_prod4++;//variable para sumar cantidad de productos agregados al carro
 
 };
+
 btn1.addEventListener('click', agregar);
 btn2.addEventListener('click', agregar2);
 btn3.addEventListener('click', agregar3);
 btn4.addEventListener('click', agregar4);
 
+const arrayProductos = [
+  {nombre: "Remera", precio: 1000},
+  {nombre: "Remera", precio: 2000},
+  { nombre: "Pantalon", precio: 1500},
+  { nombre: "Pantalon", precio: 1700},
+  
+
+  
+]
+
+const contenedorProductos = document.getElementById('productos')
+
+arrayProductos.forEach((producto) => {
+  const div = document.createElement('div')
+
+  div.style = "width: 18rem "
+
+  
+  div.innerHTML = `
+                  
+                  <div class="card-body">
+                      <h5 class="card-title grande">${producto.nombre}</h5>
+                      <p class="card-text rojo">Precio: $${producto.precio}</p>
+                     
+                  </div>
+              `
+  
+  contenedorProductos.appendChild(div)
+})
